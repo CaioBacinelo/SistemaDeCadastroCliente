@@ -16,8 +16,8 @@ public class ServicoCliente {
         } else {
             for (Cliente i : clientes ){
                 System.out.println("nome: " + i.getNome());
-                System.out.println("CPF " + i.getCPF());
-                System.out.println("Telefone " + i.getTelefone());
+                System.out.println("CPF: " + i.getCPF());
+                System.out.println("Telefone: " + i.getTelefone());
                 System.out.println("---------");
             }
         }
@@ -28,14 +28,14 @@ public class ServicoCliente {
         for (Cliente i : clientes){
             if (i.getCPF() == CPF) {
                 ClienteRemover = i;
-                System.out.println("Cliente excluído com sucesso");
+                System.out.println("Cliente excluído com sucesso.");
                 break;
             }
         }
         if (ClienteRemover != null){
             clientes.remove(ClienteRemover);
         } else{
-            System.out.println("CPF"+ CPF + "não encontrado para a exclusão");
+            System.out.println("CPF"+ CPF + "não encontrado para a exclusão.");
         }
     }
     //Editar o cliente.
@@ -72,4 +72,3 @@ public class ServicoCliente {
             return clientes;
         }
  }
-

@@ -20,18 +20,7 @@
                 System.out.println("Erro ao ler arquivo.");
             }
         }
-        //Escreve no arquivo sem deletar o que já havia sido escrito.
-        public void EscreverArquivo(String caminhoDoArquivo, String texto){
-            try{
-            BufferedWriter escrita = new BufferedWriter(new FileWriter(caminhoDoArquivo, true));
-                escrita.write(texto);
-                escrita.newLine();
-                escrita.close();
-                System.out.println("Informações adicionadas!");
-            } catch (IOException e){
-                System.out.println("Falha ao adicionar informações.");
-            }
-        }
+      
         //Salva o arquivo.
         public void SalvarArquivo(String caminhoDoArquivo, List<Cliente> clientes){
             try {

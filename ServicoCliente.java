@@ -35,7 +35,7 @@ public class ServicoCliente {
         if (ClienteRemover != null){
             clientes.remove(ClienteRemover);
         } else{
-            System.out.println("CPF"+ CPF + "não encontrado para a exclusão.");
+            System.out.println("CPF: "+ CPF + "não encontrado para a exclusão.");
         }
     }
     //Editar o cliente.
